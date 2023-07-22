@@ -1,0 +1,370 @@
+* {
+    font-family: "Rubik";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(270, 20%, 96%);
+}
+
+.wrapper {
+    display: flex;
+    width: 780px;
+    height: 600px;
+    justify-content: space-between;
+}
+
+.text {
+    width: 400px;
+    height: fit-content;
+    align-self: center;
+}
+
+.text h1 {
+    color:  hsl(271, 36%, 24%);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.text p {
+    color: hsl(270, 7%, 64%);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.dog-pics img {
+    width: 50px;
+}
+
+.phone {
+    width: 300px;
+    height: 598px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 27px;
+    padding: 12px;
+}
+
+.screen {
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 25px;
+    padding-bottom: 12px;
+}
+
+.top-screen {
+    background: linear-gradient( to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    height: 80px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px ;
+    padding: 40px 20px 0 20px;
+    position: relative;
+}
+
+.top-screen::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 135px; 
+    height: 25px; 
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.account {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.profile {
+    display: flex;
+    gap: 10px;
+}
+
+.profile::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: -10px;
+    width: 2.5px;
+    height: 6px;
+    background-color: hsl(0, 0%, 100%);
+    transform: skew(-28deg,0deg);
+}
+
+.profile::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: -10px;
+    width: 2.5px;
+    height: 6px;
+    background-color: hsl(0, 0%, 100%);
+    transform: skew(28deg,0deg);
+}
+
+.profile img {
+    width: 30px;
+    border: 1.5px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.profile-info p:first-of-type {
+    font-size: 13px;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+}
+
+.profile-info p:last-of-type {
+    font-size: 9px;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    opacity: 45%;
+}
+
+.small-dots {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+}
+
+.dot1, .dot2, .dot3 {
+    width: 3px;
+    height: 3px;
+    background-color: hsl(0, 0%, 100%);
+    opacity: 65%;
+}
+
+.middle-screen{
+    padding: 12px 10px;
+    padding-bottom: 0;
+}
+
+.top-chat {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-chat p {
+    font-size: 9.7px;
+    color: hsl(276, 55%, 52%);
+    font-weight: 500;
+    
+}
+
+.left-chat {
+    width: 153px;
+    padding: 7px 6px 7px 7px;
+    background-color: hsl(272, 32%, 92%);
+    border-radius: 10px;
+    border-bottom-left-radius: 5px;
+    line-height: 14px;
+}
+
+.middle-chat {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 17px 0;
+}
+
+.dog-pics img {
+    border-radius: 10px;
+    align-self: end;
+}
+
+.dog-pics {
+    align-self: end;
+}
+
+.right-chat p {
+    font-size: 9.7px;
+    color: hsl(271, 15%, 43%);
+    font-weight: 500;
+}
+
+.right-chat {
+    background-color: hsl(0, 0%, 100%);
+    width: 153px;
+    align-self: end;
+    padding: 7px;
+    border-radius: 10px;
+    border-bottom-right-radius: 5px;
+    line-height: 14px;
+    box-shadow: 0px 1px 7px 0px rgb(211, 207, 207);
+}
+
+.bottom-right-chat {
+    width: 100px;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0 15px 0;
+}
+
+.first-price, .second-price {
+    display: flex;
+    background: linear-gradient( to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-radius: 10px;
+    border-bottom-left-radius: 5px;
+    width: 178px;
+    height: 35px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 0 30px;
+}
+
+.pricing {
+    position: relative;
+}
+
+.pricing::before{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1.35px solid hsl(276, 100%, 81%);
+    top: 9px;
+    left: 6px;
+}
+
+.pricing::after{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1.35px solid hsl(276, 100%, 81%);
+    top: 54px;
+    left: 6px;
+}
+
+.pricing p {
+    font-size: 9.5px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+}
+
+h4 {
+    color: hsl(0, 0%, 100%); 
+}
+
+.bottom-screen {
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    margin-left: 11px;
+    margin-right: 11px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+.bottom-screen p {
+    color: hsl(206, 6%, 79%);
+    font-size: 10.5px;
+    margin-left: 18px;
+    margin-top: 11px;
+}
+
+.send-button {
+    width: 25px;
+    height: 25px;
+    background-color: hsl(271, 36%, 24%);
+    align-self: center;
+    margin-right: 5px;
+    border-radius: 50%;
+    color: white;
+    font-weight: 700;
+    padding-left: 9.5px;
+    padding-top: 2.7px;
+}
+
+.purple-bg {
+    position: absolute;
+    background: linear-gradient( to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    width: 68.3vh; 
+    height: 92vh;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 270px;
+    top: 0; 
+    left: -30vh;
+    z-index: -1;
+}
+
+.grey-bg {
+    position: absolute;
+    background-color: hsl(260, 18%, 90%);
+    width: 37vh;
+    height: 92vh;
+    border-top-left-radius: 280px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        flex-direction: column;
+        width: 330px;
+        height: 871px;
+        justify-content: normal;
+
+    }
+
+    .phone {
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .text {
+        margin-top: 50px;
+        width: 330px;
+        text-align: center;
+    }
+
+    .text h1 {
+        font-size: 44px;
+    }
+
+    .text p {
+        font-size: 17px; 
+        line-height: 27px; 
+    }
+
+    .purple-bg {
+        width: 23vh;
+        height: 65vh;
+        left: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 410px;
+    }
+
+    .grey-bg { 
+        opacity: 0%;
+    }
+}
